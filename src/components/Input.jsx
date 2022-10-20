@@ -83,6 +83,7 @@ useEffect(() => {
 useEffect(() => {
     handleFilterTodos();
     saveLocalTodos();
+    setDropdownValue(status)
 }, [todos, status]);
 
 
