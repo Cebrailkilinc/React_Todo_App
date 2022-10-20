@@ -11,7 +11,7 @@ function Todo(props) {
         <div className='w-75'>
             <ListGroup>
                 {
-                    props.todos.map((item) => {
+                    props.filterTodo.map((item) => {
                         return (
                             <ListGroup.Item key={item.id} >
                                 <div className={`d-flex align-items-center justify-content-between ${item.complete ? "text-decoration-line-through" : ""}`}>
